@@ -1,0 +1,142 @@
+[
+  {
+    "q": "Filing delay is used as a complete measure of tax compliance. What should be questioned?",
+    "options": [
+      "Validity: timeliness captures only part of compliance.",
+      "The arithmetic definition of a mean.",
+      "Whether firm identifiers have a median."
+    ],
+    "correct": 0,
+    "why": "A reliable timing measure can still miss registration, reporting or payment obligations."
+  },
+  {
+    "q": "Bars show 9.8 and 10.5 with a baseline of 9.7. What is the main problem?",
+    "options": [
+      "The increase becomes numerically false.",
+      "Truncated bar lengths exaggerate the visual difference.",
+      "Every kind of graph always needs a zero baseline."
+    ],
+    "correct": 1,
+    "why": "The values remain true, but full bar lengths should normally be measured from zero. The increase is 0.7, about 7.14%."
+  },
+  {
+    "q": "Multiple-response survey percentages total 140%. Which display is suitable?",
+    "options": [
+      "A pie normalised to 100%.",
+      "A pie retaining 140%.",
+      "Bars with the original respondent denominator."
+    ],
+    "correct": 2,
+    "why": "Selections overlap. They are not mutually exclusive parts of one whole."
+  },
+  {
+    "q": "Unequal intervals have densities 1.8, 2.4 and 1.33. Which is the modal interval?",
+    "options": [
+      "The first.",
+      "The second.",
+      "Whichever has the largest raw count."
+    ],
+    "correct": 1,
+    "why": "For unequal widths, compare density. Histogram areas represent frequencies."
+  },
+  {
+    "q": "Grouped times have counts 8,15,12,5 in four consecutive 12-hour intervals. What is known?",
+    "options": [
+      "The exact median is necessarily 18.",
+      "The median lies in [12,24); interpolation needs an assumption.",
+      "The median must be in the most populated half of the last interval."
+    ],
+    "correct": 1,
+    "why": "Cumulative counts 8,23,35,40 place the midpoint in the second interval. Uniform interpolation gives about 21.6."
+  },
+  {
+    "q": "Two ordinal distributions have the same modal category. Must they have the same median category?",
+    "options": [
+      "Yes.",
+      "Only if the category names are numbers.",
+      "No."
+    ],
+    "correct": 2,
+    "why": "The mode uses the largest frequency; the median uses order and cumulative frequencies."
+  },
+  {
+    "q": "Office rates are 8/10 and 45/90. What is the overall filing rate?",
+    "options": [
+      "65%.",
+      "53%.",
+      "80%."
+    ],
+    "correct": 1,
+    "why": "(8+45)/(10+90) = 53%. Office denominators provide the weights."
+  },
+  {
+    "q": "The 90th percentile of turnover is:",
+    "options": [
+      "90% of the largest turnover.",
+      "A position in the ordered observations.",
+      "Always the arithmetic mean."
+    ],
+    "correct": 1,
+    "why": "Percentiles concern relative positions. Sample conventions and ties matter."
+  },
+  {
+    "q": "Why square deviations when calculating variance?",
+    "options": [
+      "Signed deviations from the mean sum to zero.",
+      "Squaring preserves the original measurement unit.",
+      "Squaring makes all deviations equal."
+    ],
+    "correct": 0,
+    "why": "Squaring avoids cancellation but produces squared units. SD restores the original unit."
+  },
+  {
+    "q": "For 20,40,0,70, the squared deviations total 2675. What is the sample variance?",
+    "options": [
+      "2675/4 = 668.75.",
+      "2675/3 \u2248 891.667.",
+      "Zero."
+    ],
+    "correct": 1,
+    "why": "The sample convention uses n\u22121. The average squared deviation with denominator n describes this observed set."
+  },
+  {
+    "q": "Multiplying every value by 1,000 changes variance by:",
+    "options": [
+      "1,000.",
+      "Nothing.",
+      "1,000,000."
+    ],
+    "correct": 2,
+    "why": "Variance scales by the square of the factor; SD scales by its absolute value."
+  },
+  {
+    "q": "With three equally frequent categories, Gini\u2013Simpson and its normalised value are:",
+    "options": [
+      "2/3 and 1.",
+      "1 and 1.",
+      "1/3 and 2/3."
+    ],
+    "correct": 0,
+    "why": "The raw maximum is 1\u22121/K; dividing by it gives the normalised maximum 1."
+  },
+  {
+    "q": "Changing Shannon\u2019s logarithm base does what?",
+    "options": [
+      "Changes raw entropy, while matched-base normalisation stays the same.",
+      "Changes neither the raw nor the normalised value.",
+      "Makes entropy a probability."
+    ],
+    "correct": 0,
+    "why": "The maximum is log K in the chosen base. Dividing numerator and denominator by the same base-conversion factor cancels it."
+  },
+  {
+    "q": "A large positive turnover z-score establishes:",
+    "options": [
+      "An intentional tax violation.",
+      "A value above the reference mean, measured in SD units.",
+      "That the data are normally distributed."
+    ],
+    "correct": 1,
+    "why": "A standardised distance neither proves wrongdoing nor establishes normality."
+  }
+]

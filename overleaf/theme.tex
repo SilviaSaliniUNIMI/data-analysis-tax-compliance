@@ -1,0 +1,31 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,booktabs,amsmath,amssymb,graphicx,tikz,array,listings}
+\usetikzlibrary{positioning,arrows.meta}
+\definecolor{Navy}{HTML}{123452}
+\definecolor{Teal}{HTML}{A34010}
+\definecolor{Rust}{HTML}{A34010}
+\definecolor{Pale}{HTML}{FFF0DF}
+\setbeamercolor{normal text}{fg=Navy,bg=white}
+\setbeamercolor{structure}{fg=Teal}
+\setbeamercolor{frametitle}{fg=Navy}
+\setbeamercolor{title}{fg=Navy}
+\setbeamercolor{alerted text}{fg=Rust}
+\setbeamercolor{block title}{fg=white,bg=Teal}
+\setbeamercolor{block body}{fg=Navy,bg=Pale}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{subtitle}{size=\large}
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=10mm,text margin right=10mm}
+\setbeamertemplate{frametitle}{\vspace{4mm}\insertframetitle\par\vspace{1mm}{\color{Teal}\rule{\textwidth}{.5pt}}}
+\setbeamertemplate{footline}{\hspace{10mm}\scriptsize Silvia Salini\hfill University of Milan / HCAI\hfill\insertframenumber\hspace{10mm}\vspace{3mm}}
+\setbeamertemplate{itemize item}{\small\textbullet}
+\setbeamertemplate{itemize subitem}{\tiny\textbullet}
+\setlength{\parskip}{5pt}
+\hypersetup{colorlinks=true,urlcolor=Teal,linkcolor=Teal}
+\newcommand{\prompt}[1]{\vspace{2mm}\begin{block}{Discussion}#1\end{block}}
+\newcommand{\source}[1]{\vfill{\tiny\color{gray}#1}}
+\lstset{basicstyle=\ttfamily\small,keywordstyle=\color{Teal},commentstyle=\color{gray},showstringspaces=false,breaklines=true,frame=none}
+\author{Silvia Salini}
+\institute{University of Milan\\Human Centered Artificial Intelligence}
