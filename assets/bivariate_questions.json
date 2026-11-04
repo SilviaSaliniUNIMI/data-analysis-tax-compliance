@@ -1,0 +1,142 @@
+[
+  {
+    "q": "Which analysis matches channel and filing outcome, both categorical?",
+    "options": [
+      "A contingency table and χ² test with assumptions",
+      "ANOVA on arbitrary category codes",
+      "Pearson r on channel labels"
+    ],
+    "correct": 0,
+    "why": "Use counts and conditional distributions for two categorical variables."
+  },
+  {
+    "q": "The on-time share among email cases uses which denominator?",
+    "options": [
+      "All on-time cases",
+      "All 600 cases",
+      "All email cases"
+    ],
+    "correct": 2,
+    "why": "Conditioning on the channel requires its row total."
+  },
+  {
+    "q": "Under independence, expected Email × On time is:",
+    "options": [
+      "150",
+      "260 × 260 / 600",
+      "260 + 260"
+    ],
+    "correct": 1,
+    "why": "Expected count is the product of the two margins divided by total n."
+  },
+  {
+    "q": "The 3 × 3 χ² reference distribution has:",
+    "options": [
+      "9 df",
+      "6 df",
+      "4 df"
+    ],
+    "correct": 2,
+    "why": "df = (3−1)(3−1) = 4."
+  },
+  {
+    "q": "Multiplying all counts by k for a hypothetical larger independent sample:",
+    "options": [
+      "Leaves V unchanged while χ² grows by k",
+      "Multiplies V by k",
+      "Creates independence"
+    ],
+    "correct": 0,
+    "why": "Relative proportions and V stay fixed. Copying actual records would not supply independent information."
+  },
+  {
+    "q": "Cramér’s V equals:",
+    "options": [
+      "χ²/n for every table",
+      "√[χ²/{n min(r−1,c−1)}]",
+      "χ² divided by the number of cells"
+    ],
+    "correct": 1,
+    "why": "The square root distinguishes V from V²."
+  },
+  {
+    "q": "A significant one-way ANOVA establishes under its assumptions:",
+    "options": [
+      "Every pair of means differs",
+      "The procedure caused the difference",
+      "Not all population means are equal"
+    ],
+    "correct": 2,
+    "why": "The global test does not identify pairs or establish a causal mechanism."
+  },
+  {
+    "q": "η² = 0.25 means:",
+    "options": [
+      "25% of observed total squared variation is associated with groups",
+      "There is a 25% probability the null is true",
+      "The factor causes 25% of outcomes"
+    ],
+    "correct": 0,
+    "why": "η² = SS between / SS total is a descriptive effect size, not a causal share."
+  },
+  {
+    "q": "F = t² for two groups refers here to:",
+    "options": [
+      "Any paired t test and any ANOVA",
+      "The pooled equal-variance independent t test and classical one-way ANOVA",
+      "Only tests with n = 30"
+    ],
+    "correct": 1,
+    "why": "The models must match; the two-sided t and F tests then share a p-value."
+  },
+  {
+    "q": "Which claim about r is correct?",
+    "options": [
+      "It measures the slope in original units",
+      "r = 0 proves independence",
+      "It measures linear association and can miss a strong nonlinear relation"
+    ],
+    "correct": 2,
+    "why": "For symmetric X and Y = X², r can be zero despite deterministic dependence."
+  },
+  {
+    "q": "Why can the reminder comparison reverse after stratifying by complexity?",
+    "options": [
+      "The groups use different weights for simple and complex cases",
+      "Conditional percentages must sum to the aggregate percentage",
+      "One table must contain an arithmetic error"
+    ],
+    "correct": 0,
+    "why": "Different group compositions change weighted averages. Both marginal and conditional results can be numerically correct."
+  },
+  {
+    "q": "In simple OLS with an intercept, which relation holds?",
+    "options": [
+      "R² = r",
+      "R² = r²",
+      "R² is the slope"
+    ],
+    "correct": 1,
+    "why": "Squaring r removes its sign; the fitted slope still describes direction and units."
+  },
+  {
+    "q": "Why is a new-case prediction interval wider than the mean-response CI at the same x?",
+    "options": [
+      "It uses a different dataset",
+      "It assumes causation",
+      "It includes individual variation around the mean response"
+    ],
+    "correct": 2,
+    "why": "Both account for uncertainty in the fitted mean; prediction adds a new observation’s error."
+  },
+  {
+    "q": "A strong observational association in tax data:",
+    "options": [
+      "Needs design and confounding assessment before causal interpretation",
+      "Is sufficient to rank causal policy effects",
+      "Proves intentional noncompliance"
+    ],
+    "correct": 0,
+    "why": "Selection, confounding, measurement and alternative mechanisms must be considered."
+  }
+]

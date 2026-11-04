@@ -1,0 +1,122 @@
+[
+  {
+    "q": "What is one observation in a sampling distribution of means?",
+    "options": [
+      "One filing",
+      "One mean calculated from an entire sample",
+      "One population parameter"
+    ],
+    "correct": 1,
+    "why": "Each repeated sample contributes a statistic. Individual records belong to the data distribution."
+  },
+  {
+    "q": "The register sample is drawn without replacement. Which discrepancy-count model is exact?",
+    "options": [
+      "Binomial in all cases",
+      "Normal in all cases",
+      "Hypergeometric for a fixed sample size"
+    ],
+    "correct": 2,
+    "why": "Finite-population sampling without replacement gives a hypergeometric count. A binomial model assumes independent trials."
+  },
+  {
+    "q": "What can increasing the number of targeted audits do?",
+    "options": [
+      "Reduce variability within the selected group",
+      "Automatically remove population selection bias",
+      "Guarantee representative coverage"
+    ],
+    "correct": 0,
+    "why": "Precision and selection bias are distinct. More high-priority cases need not reveal excluded cases."
+  },
+  {
+    "q": "For a mean based on independent observations with unknown σ, what is the estimated SE?",
+    "options": [
+      "s",
+      "s/n",
+      "s/√n"
+    ],
+    "correct": 2,
+    "why": "s describes individual variability; s/√n estimates the variability of the sample mean."
+  },
+  {
+    "q": "A 95% frequentist confidence procedure means:",
+    "options": [
+      "95% of individual observations lie in every interval",
+      "About 95% of its intervals cover the fixed parameter in repeated sampling under the assumptions",
+      "The realised interval has a 95% posterior probability of containing the parameter"
+    ],
+    "correct": 1,
+    "why": "Coverage is a property of the procedure. A realised interval either covers the fixed parameter or does not."
+  },
+  {
+    "q": "For n = 25, a two-sided 95% t interval uses:",
+    "options": [
+      "24 df and the 0.975 quantile",
+      "25 df and the 0.95 quantile",
+      "24 df and the 0.95 quantile"
+    ],
+    "correct": 0,
+    "why": "One estimated mean costs one degree of freedom; split α = 0.05 across both tails."
+  },
+  {
+    "q": "Holding n and SD fixed, going from 95% to 99% confidence:",
+    "options": [
+      "Narrows the interval",
+      "Leaves the interval unchanged",
+      "Widens the interval"
+    ],
+    "correct": 2,
+    "why": "Higher coverage requires a larger critical value and margin."
+  },
+  {
+    "q": "A p-value of 0.0071 is:",
+    "options": [
+      "The probability H₀ is true",
+      "A tail probability for a statistic at least as extreme, assuming H₀ and the model",
+      "The probability the finding is economically important"
+    ],
+    "correct": 1,
+    "why": "The reference distribution is computed under H₀. The p-value is not a probability assigned to H₀."
+  },
+  {
+    "q": "If p = 0.12 at α = 0.05, the appropriate conclusion is:",
+    "options": [
+      "H₀ is proved",
+      "H₁ is false",
+      "Do not reject H₀ at this level"
+    ],
+    "correct": 2,
+    "why": "Insufficient evidence against H₀ does not demonstrate equality."
+  },
+  {
+    "q": "Which variance enters the score test for H₀: π = π₀?",
+    "options": [
+      "π₀(1−π₀)/n",
+      "p̂(1−p̂)/n",
+      "The sample variance of declared amounts"
+    ],
+    "correct": 0,
+    "why": "A null reference distribution uses variability under the hypothesised proportion."
+  },
+  {
+    "q": "Holding α, σ and a nonzero effect fixed, increasing n generally:",
+    "options": [
+      "Increases Type I error above α",
+      "Increases power",
+      "Removes all uncertainty"
+    ],
+    "correct": 1,
+    "why": "A smaller SE makes a fixed alternative easier to distinguish while the correctly calibrated null rejection rate stays α."
+  },
+  {
+    "q": "A statistically significant 0.2-day difference:",
+    "options": [
+      "Must justify a policy change",
+      "Proves which intervention caused it",
+      "Needs an effect-size and cost/context assessment"
+    ],
+    "correct": 2,
+    "why": "Statistical evidence is distinct from practical importance and causation."
+  }
+]

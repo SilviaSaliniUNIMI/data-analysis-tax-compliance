@@ -1,0 +1,4 @@
+channel,on_time,late,not_received
+Email,150,70,40
+SMS,70,90,50
+Letter,40,30,60
