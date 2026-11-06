@@ -1,9 +1,18 @@
-\begin{frame}{A review to use alongside E-tivity 2}
-\begin{itemize}
-\item Read one topic, attempt the exercise, then compare your reasoning with the feedback.
-\item Use the same dataset across the activities. All observations are synthetic.
-\item Revisit difficult topics before the 4 November meeting.
-\end{itemize}\par\vspace{3mm}This companion is a reference for independent study. It is not an additional lecture to complete on 14 October.
+\begin{frame}{Three activities for descriptive statistics}
+\begin{enumerate}
+\item \textbf{2A: Reading data and graphs}\\Measurement, denominators, missing values and graphical choices.
+\item \textbf{2B: Centre and variability}\\Mean, median, quantiles, variance and relative spread.
+\item \textbf{2C: Heterogeneity and indices}\\Categorical diversity, standardisation and interpretation.
+\end{enumerate}
+\prompt{Predict, explore, explain. Each activity ends with a decision task and a quiz.}
+\end{frame}
+
+
+\begin{frame}{E-tivity 2A: Reading data and graphs}
+\Large Reading data and graphs\par\vspace{5mm}
+\normalsize Complete the matching activity in the descriptive learning path.\par
+\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/02a-graphs.html}{Open E-tivity 2A}\par
+
 \end{frame}
 
 \begin{frame}{Measurement determines meaningful operations}
@@ -93,6 +102,13 @@ Interval & Count & Width & Count / width\\\midrule
 200--400 & 1 & 200 & 0.005\\\bottomrule
 \end{tabular}\par\end{center}
 Histogram \textbf{area} represents frequency. With unequal widths, the modal interval has the greatest density. For relative density, also divide by $n$.
+\end{frame}
+
+\begin{frame}{E-tivity 2B: Centre and variability}
+\Large Centre and variability\par\vspace{5mm}
+\normalsize Complete the matching activity in the descriptive learning path.\par
+\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/02b-centre-spread.html}{Open E-tivity 2B}\par
+
 \end{frame}
 
 \begin{frame}{Mode, median and mean describe different features}
@@ -227,6 +243,13 @@ Multiplying by 1,000 converts thousand EUR into EUR and multiplies the standard 
 Use it for positive ratio-scale measurements with a meaningful zero. A mean near zero makes it unstable. It is generally inappropriate for Celsius temperatures.
 \end{frame}
 
+\begin{frame}{E-tivity 2C: Heterogeneity and indices}
+\Large Heterogeneity and indices\par\vspace{5mm}
+\normalsize Complete the matching activity in the descriptive learning path.\par
+\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/02c-heterogeneity.html}{Open E-tivity 2C}\par
+
+\end{frame}
+
 \begin{frame}{Categorical heterogeneity is also variability}
 For $K$ categories with proportions $p_1,\ldots,p_K$:
 \[G=1-\sum_{j=1}^K p_j^2.\]
@@ -328,4 +351,15 @@ Repeated simulations produce observed proportions near $1/3$ and $2/3$. The prob
 \par\vspace{3mm}
 The mechanism generating the information matters. We return to probability in the inference block.
 \source{Condensed from the supplied Monty Hall e-tivity. This is an optional probability example, not a descriptive statistic or a taxpayer model.}
+\end{frame}
+
+\begin{frame}{Standardised components and their sum}
+For standardised variables $Z_1,Z_2,Z_3$, each has sample mean 0 and sample variance 1 on the same observations.
+\[\mathrm{Var}(Z_1+Z_2+Z_3)=3+2(r_{12}+r_{13}+r_{23}).\]
+The sum has mean zero. Its standard deviation depends on the correlations.
+\begin{itemize}
+\item Uncorrelated components: SD $=\sqrt{3}$.
+\item Identical standardised components: SD $=3$.
+\end{itemize}
+A positive z-score means above the mean. Z-scores have no universal bounds of $-3$ and $+3$.
 \end{frame}

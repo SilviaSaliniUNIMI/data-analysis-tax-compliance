@@ -1,4 +1,5 @@
 \begin{frame}{Today: identify, compare, interpret}
+\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/04-bivariate.html}{Open the interactive activity}\par
 \begin{itemize}
 \item Choose a method from the variables and the research question.
 \item Read contingency tables; calculate $\chi^2$ and Cram\'{e}r\textquotesingle s V.
@@ -35,7 +36,7 @@ P(\text{Late}\mid\text{Email})\approx70/260=.2692,
 \[
 P(\text{Email}\mid\text{Late})\approx70/190=.3684.
 \]
-\prompt{E-tivity 4, section 2: switch between row and column percentages. Say each denominator aloud.}
+\prompt{\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/04-bivariate.html}{E-tivity 4}, section 2: switch between row and column percentages. Say each denominator aloud.}
 \end{frame}
 \begin{frame}{Independence: the product rule}
 Under population independence,
@@ -95,7 +96,7 @@ Effect size and statistical significance answer different questions.
 \begin{center}\includegraphics[width=.8\textwidth]{figures/groups_block2.pdf}\end{center}\small Constructed processing times: means 5, 9 and 13 days; six cases per group; each sample variance is 2 days$^2$. Vertical lines mark means.
 \end{frame}
 \begin{frame}{Ask about separation and spread}
-\begin{block}{E-tivity 4, section 5: 5 minutes}Increase the gap between means while holding within-group spread fixed. Then increase within-group spread while holding means fixed.\end{block}
+\begin{block}{\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/04-bivariate.html}{\textcolor{white}{E-tivity 4}}, section 5: 5 minutes}Increase the gap between means while holding within-group spread fixed. Then increase within-group spread while holding means fixed.\end{block}
 \begin{itemize}\item Large mean differences relative to internal spread are easier to distinguish.\item A grand mean must weight groups by their sizes.\item A distribution plot can expose skewness, outliers and heterogeneity hidden by a mean.\end{itemize}
 \end{frame}
 \begin{frame}{Two groups: independent or paired?}
@@ -259,11 +260,22 @@ X\perp Y\ \Rightarrow\ E(Y\mid X)=E(Y)\ \Rightarrow\ \operatorname{Cov}(X,Y)=0.
 \begin{itemize}\item Mean independence as written is directional.\item The reverse implications do not hold in general.\item If the joint distribution is bivariate normal, zero correlation does imply independence.\end{itemize}
 For i.i.d. bivariate normal data, the test of $H_0:\rho=0$ uses $t=r\sqrt{(n-2)/(1-r^2)}$ with $n-2$ df.
 \end{frame}
-\begin{frame}{Sources and teaching adaptation}
-\small
-Silvia Salini: supplied \emph{Association}, \emph{ANOVA} and \emph{Correlation} decks. Original acknowledgements are retained in the accompanying source map.
-
-Saved activities: B4-1 t/ANOVA, B4-2 contingency tables, B4-3 Simpson, B4-4 correlation/regression; original collection: \url{https://silviasaliniunimi.github.io/statistics-iple/}.
-
-All numerical examples here are synthetic and recomputed from the included CSV files. Cram\'{e}r's V and V$^2$ are distinguished; F--t equivalence is limited to matching models. Regression is an optional bridge. R teaching materials will be prepared separately.
+\begin{frame}{R laboratory, Part B: bivariate analysis}
+The supplied BES education materials provide examples of:
+\begin{itemize}
+\item Contingency tables: area and a dropout indicator.
+\item Two groups: NEET percentages by dropout category.
+\item Several groups: NEET percentages across geographical areas.
+\item Quantitative pairs: tertiary education and cultural participation.
+\end{itemize}
+Regional percentages describe areas, not individual behaviour. Model-based tests require explicit assumptions when the dataset covers all regions.
+\end{frame}
+\begin{frame}{From bivariate analysis to supervised learning}
+\begin{itemize}
+\item A simple fitted line links the bivariate examples to prediction.
+\item Multiple regression belongs to the supervised block, with validation and diagnostics.
+\item A separate R session follows the theory of supervised learning.
+\item The unsupervised block also pairs theory with examples in R.
+\end{itemize}
+\prompt{Which question concerns association in the observed data, and which concerns prediction for new cases?}
 \end{frame}

@@ -1,4 +1,5 @@
 \begin{frame}{Today: from samples to decisions}
+\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/03-inference.html}{Open the interactive activity}\par
 \begin{itemize}
 \item Define a population, parameter, sample and estimator.
 \item Distinguish sampling variation, selection bias and precision.
@@ -41,7 +42,7 @@ These are constructed examples, not empirical tax estimates.
 \prompt{What population does a random sample from the priority group represent?}
 \end{frame}
 \begin{frame}{One sample is one possible outcome}
-\begin{block}{E-tivity 3, section 2: 5 minutes}Draw two samples of 40 filings. Compare both means and both proportions. Keep the sampling rule fixed.\end{block}
+\begin{block}{\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/03-inference.html}{\textcolor{white}{E-tivity 3}}, section 2: 5 minutes}Draw two samples of 40 filings. Compare both means and both proportions. Keep the sampling rule fixed.\end{block}
 Sampling error is the difference between a statistic and its target parameter, for example $\bar x-\mu$.
 Different estimates do not imply different arithmetic rules: different records entered the sample.
 \prompt{What would repeated samples allow us to measure?}
@@ -125,7 +126,7 @@ Exact small-sample inference requires independent normal observations. Strong sk
 \item It is not an interval containing 95\% of individual processing times.
 \item It does not assign a frequentist posterior probability of 95\% to the fixed mean.
 \item It does not correct a biased sampling frame or poor measurement.
-\end{itemize}\prompt{E-tivity 3, section 6: simulate 100 intervals. Why need observed coverage not equal the nominal percentage exactly?}
+\end{itemize}\prompt{\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/03-inference.html}{E-tivity 3}, section 6: simulate 100 intervals. Why need observed coverage not equal the nominal percentage exactly?}
 \end{frame}
 \begin{frame}{Hypothesis testing: decide the comparison first}
 \begin{enumerate}\item State $H_0$, the reference model, and a substantively justified $H_1$.\item Choose the significance level $\alpha$ and one- or two-sided test.\item Check assumptions; calculate a statistic and its tail probability.\item Report evidence, effect size, uncertainty and limitations.\end{enumerate}
@@ -174,7 +175,7 @@ Power depends on a \textbf{specified alternative effect}, sample size, variabili
 \prompt{For fixed effect and variability: what changes when you increase $n$? What changes when you increase $\alpha$?}
 \end{frame}
 \begin{frame}{Power and practical relevance}
-\begin{block}{E-tivity 3, section 9: 7 minutes}Two-sided z test; $\sigma=2$, $\mu_0=10$. Compare $n=25$ and $n=100$ for a true difference of 0.6 days. Then compare $\alpha=.01$ and $.05$.\end{block}
+\begin{block}{\href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/03-inference.html}{\textcolor{white}{E-tivity 3}}, section 9: 7 minutes}Two-sided z test; $\sigma=2$, $\mu_0=10$. Compare $n=25$ and $n=100$ for a true difference of 0.6 days. Then compare $\alpha=.01$ and $.05$.\end{block}
 \begin{itemize}\item More information can raise power without increasing nominal $\alpha$.\item Increasing $\alpha$ raises power but also allows more Type I errors.\item A tiny effect can be significant in a very large sample.\end{itemize}
 Statistical errors about a mean or proportion are not individual taxpayer classifications.
 \end{frame}
@@ -184,10 +185,10 @@ Statistical errors about a mean or proportion are not individual taxpayer classi
 \end{frame}
 \begin{frame}{Before the bivariate lesson}
 \begin{itemize}
-\item Complete E-tivity 3 and its 12-question self-check.
+\item Complete \href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/03-inference.html}{E-tivity 3} and its 12-question self-check.
 \item Export the short inference report and bring one unresolved question.
-\item Preview variable types and conditional percentages in E-tivity 4.
-\item R practice will be developed as a separate teaching block.
+\item Preview variable types and conditional percentages in \href{https://silviasaliniunimi.github.io/data-analysis-tax-compliance/04-bivariate.html}{E-tivity 4}.
+\item The R laboratory combines sampling means and bivariate analysis.
 \end{itemize}\source{Core lecture ends here. The following slides are optional reference material.}
 \end{frame}
 \begin{frame}{Reference: sample variance and degrees of freedom}
@@ -222,13 +223,28 @@ z=\frac{\hat p_1-\hat p_2}{\sqrt{\hat p_{\rm pool}(1-\hat p_{\rm pool})(1/n_1+1/
 \]
 \begin{itemize}\item Check independence and adequate expected counts.\item A simple Wald interval for the difference uses the unpooled SE; more reliable interval methods are available.\item This is connected to the $2\times2$ independence test in the next block.\end{itemize}
 \end{frame}
-\begin{frame}{Sources and teaching adaptation}
-\small
-Silvia Salini: supplied \emph{Lecture 3 -- Inference}; original deck acknowledges Evan Schofer (2005) and Agresti texts.
-
-Saved Salini e-tivities: B3-1 sampling distributions, B3-2 interval estimation, B3-3 hypothesis testing. The live IPLE collection was unavailable during this revision.
-
-\href{https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm}{NIST e-Handbook: confidence limits for a mean}.
-
-Examples are synthetic. The separate supplied R/IRPEF materials are reserved for the dedicated R lessons. Finite-population formulas, p-value language and confidence-interval interpretation have been clarified.
+\begin{frame}{A small population with two values}
+A population contains 40 balls: 10 labelled 1 and 30 labelled 5.
+\[P(X=1)=1/4,\qquad P(X=5)=3/4.\]
+\[\mu=1(1/4)+5(3/4)=4,\qquad \sigma^2=3.\]
+Draw four times \textbf{with replacement}, so the draws are independent.
+\prompt{The population has only two possible values. How many different values can the sample mean take?}
+\end{frame}
+\begin{frame}{The exact distribution of the sample mean}
+Let $K$ count the draws labelled 5. Then $K\sim\mathrm{Binomial}(4,3/4)$ and $\bar X=1+K$.
+\begin{center}\begin{tabular}{lrrrrr}\toprule
+$K$ & 0 & 1 & 2 & 3 & 4\\
+$\bar X$ & 1 & 2 & 3 & 4 & 5\\
+$P(\bar X)$ & $1/256$ & $12/256$ & $54/256$ & $108/256$ & $81/256$\\\bottomrule\end{tabular}\end{center}
+\[E(\bar X)=4,\qquad \mathrm{Var}(\bar X)=3/4.\]
+The 16 ordered sequences of labels are \textbf{not equally likely}. Sampling without replacement would require a hypergeometric model.
+\end{frame}
+\begin{frame}{R laboratory, Part A: municipal income data}
+\begin{itemize}
+\item Treat the supplied municipal file as a finite teaching population.
+\item Draw 200 samples without replacement at each size: $n=10,100,1000$.
+\item Compare the population distribution with the distributions of sample means.
+\item Relate their spread to the standard error and finite-population correction.
+\end{itemize}
+The unweighted mean of municipal averages describes municipalities. It is not the national average across individual pension recipients.
 \end{frame}
